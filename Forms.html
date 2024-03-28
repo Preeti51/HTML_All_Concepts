@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <!-- Different tags for form -->
+        <!-- input, label, select(drop down), option, button, textarea, fieldset, legends,-->
+    <form>
+       <fieldset>
+        <legend>HTML Form Dummy</legend>
+         <!-- input/ label/Date Picker -->
+         <label for="datepicker">Choose Date:</label>
+         <input id="datepicker" type="date">
+         <br/>
+         <br/>
+ 
+         <!-- Slect(Drop down) using option -->
+         <!-- Question: Use of value attribute in option in select tag:
+             The value attribute specifies the value to be sent to a server when a form 
+             is submitted. The content between the opening 
+             <option> and closing </option> tags is what the 
+             browsers will display in a drop-down list. However, 
+             the value of the value attribute is what will be 
+             sent to the server when a form is submitted.
+         -->
+         
+         <label for="selector1">Choose your dish: </label>
+         <select name="dishes" id="selector1">
+             <option value="maggi">Maggi</option>
+             <option value="kurkure">kurkure</option>
+             <option value = "chips">Chips</option>
+         </select>
+
+         <br/>
+         <br/>
+ 
+          <!-- Select multiple option in using "multiple" keyword in <select> tag-->
+         <select multiple name="dishes" id="selector1">
+            <option value="maggi">Maggi</option>
+            <option value="kurkure">kurkure</option>
+            <option value = "chips">Chips</option>
+        </select>
+        <br/>
+         <br/>
+         <!-- Button -->
+         <button> Submit</button>
+         <br/>
+         <br/>
+         <!-- Text Area -->
+         <textarea name="textArea1" id="teaxtarea1" cols="30" rows="10" placeholder="Enter text here..."></textarea>  
+       </fieldset>
+       
+    </form>
+    </div><br><hr><br>
+
+    <div>
+        <form>
+
+            <!-- TextField -->
+            <label for="textfield">TextField: </label>
+            <input type="text" name="textfield" id="textfield1">
+            <br/>
+            <br/>
+    
+            <!-- Button -->
+            <label for="button1">Button: </label>
+            <input type="submit" name="button1" id="button1" value="Subscribe">
+            <br/>
+            <br/>
+    
+            <!-- Radio Button -->
+            <label for="radio1">Male:</label>
+            <input type="radio" name="radio" id="radio1">
+    
+            <label for="radio2">Female:</label>
+            <input type="radio" name="radio" id="radio2">
+    
+            <label for="radio3">Prefer not to say:</label>
+            <input type="radio" name="radio" id="radio3"><br/><br/>
+    
+            <!-- CheckBox -->
+            <label for="checkbox1">English:</label>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+    
+            <label for="checkbox2">Hindi:</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2"><br/><br/>
+    
+            <!-- file select -->
+            <label for="fileselect">Upload:</label>
+            <input type="file" name="fileselect1" id="fileselect"><br/><br/>
+    
+            <!-- Image as a button -->
+            <input type="image" name="imageButton1" id="imageButton1" alt="click here" src="FormLogo.png" height="100px" width="100px"><br/><br/>
+    
+            <!-- Password -->
+            <label for="pwd1">Enter Password</label>
+            <input type="password" id="pwd1" name="pwd1"><br/><br/>
+    
+             <!-- Date Picker -->
+             <label for="datepicker1">Enter Date</label>
+             <input type="date" id="datepicker1" name="datepicker1"><br/><br/>
+        </form>
+    </div><br><hr>
+    
+    <div>
+    <!-- Event Registration -->
+    <form action="./index.html">
+        <h1>Event Registration</h1>
+
+        <label for="name1">Name:</label>
+        <input type="text" id="name1" name="name1"><br/><br/>
+
+        <label for="email1">Email:</label>
+        <input type="email" id="email1" name="email1"><br/><br/>
+ 
+        <label for="tel1">Phone:</label>
+        <input type="tel" id="tel1" name="tel1"><br/><br/>
+
+        <label for="occuption1">Occuption</label>
+        <select id="occuption1" name="occuption1">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select> <br/><br/>
+
+        <p>Topics of Interest</p>
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for="checkbox1">HTML</label>
+       
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+        <label for="checkbox2">CSS</label>
+
+        <input type="checkbox" id="checkbox3" name="checkbox3">
+        <label for="checkbox3">JavaScript</label><br/><br/>
+
+        <!-- inside the input we are having only text field -->
+        <!-- for textarea comments we are using <textarea> tag -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea><br/><br/>
+        
+        <!-- Reset Keyboard: reset all the value of form-->
+        <!-- value in input tag: already filled in input box if input box is button then the value is text on button-->
+        <input type="reset" value="Reset"><br/><br/>
+
+        <!-- if input type is submit for button then type is bydefault will take as value of <input> tag no need for "value" attributes-->
+        <input type="submit" id="btn1" name="btn1" value="submit">
+
+        <button type="submit" formaction="./index.html">Submit to another page</button>
+    </form>
+    </div><br><hr>
+    
+    <div>
+        <form>
+            <h1>Job Application</h1>
+            <label for="name1">Name:</label>
+            <input type="text" id="name1" name="name1"><br/><br/>
+    
+            <label for="email1">Email:</label>
+            <input type="email" id="email1" name="email1"><br/><br/>
+    
+            <label for="tel1">Phone:</label>
+            <input type="tel" id="tel1" name="tel1"><br/><br/>
+    
+            <label for="resume1">Resume:</label>
+            <input type="file" id="resume1" name="resume1"><br/><br/>
+    
+            <label for="counter">Experience (Year):</label>
+            <!-- <select id="name1" name="name1" >
+                <option>0-3</option>
+                <option>4-8</option>
+                <option>9-12</option>
+            </select> -->
+            <input type="number" id="counter" name="counter" min="0" max="20"><br/><br/>
+    
+            <fieldset>
+                <legend>Skills:</legend>
+                
+                <input type="checkbox" id="html1" name="html1">
+                <label for="html1">HTML</label><br/><br/>
+    
+                <input type="checkbox" id="css1" name="css1">
+                <label for="css1">CSS</label><br/><br/>
+    
+                <input type="checkbox" id="js1" name="js1">
+                <label for="js1">JavaScript</label>
+                
+            </fieldset>
+    
+            <br/>
+            <label for="edu1">Highiest Education:</label>
+            <select id="edu1" name="edu1" >
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+            </select> <br/><br/>
+    
+            <fieldset>
+                <legend>Availablity:</legend>
+                <label for="fulltime">Full-time</label>
+                <input type="radio" id="fulltime" name="fulltime">
+                <br/>
+    
+                <label for="parttime">Part-time</label>
+                <input type="radio" id="parttime" name="fulltime">
+                <br/>
+            </fieldset>
+            <br/>
+    
+            <!-- There is different between row and rows && col and cols -->
+            <label for="cmt1">Additional comments:</label> <br/>
+            <textarea id="cmt1" name="cmt1" cols="20" rows="10"></textarea><br/><br/>
+    
+            <input type="submit" value="Submit Application">
+        </form>
+    </div><br><hr>
+    
+    <div>
+        <h2>Complex Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Informations</legend>
+                <label for="name1">Name:</label>
+                <input id="name1" name="name1" type="text">
+    
+                <label for="email1">Email Id:</label>
+                <input type="email" id="email1" name="email1">
+    
+                <label for="tel1">Phone:</label>
+                <input type="tel" id="tel1" name="tel1">
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+    
+                <p>Gender:</p>
+                <input type="radio" id="radio1" name="radio">
+                <label for="radio1">Male</label>
+    
+                <input type="radio" id="radio2" name="radio">
+                <label for="radio2">Female</label>
+    
+                <label for="country1">Country</label>
+                <select id="country1" name="country1">
+                    <option value="us">united state</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="uk">united kingdom</option>
+                    <option value="japan">Japan</option>
+                </select>
+            
+            </fieldset>
+    
+            <fieldset>
+                <legend>Address</legend>
+                <label for="street1">Street</label>
+                <input type="text" id="street1" name="street1"> 
+    
+                <label for="city1">City</label>
+                <input type="text" id="city1" name="city1"> 
+    
+                <label for="state1">State</label>
+                <input type="text" id="state1" name="state1"> 
+    
+                <label for="zcode1">Zip Code</label>
+                <input type="text" id="zcode1" name="zcode1"> 
+                
+            </fieldset>
+    
+            <fieldset>
+                <legend>Other Information</legend>
+                <label for="cmt1">comments</label>
+                <textarea cols="20" rows="10" id="cmt1" name="cmt1"></textarea>
+                <label for="agree1">I agree to the terms of service</label>
+                <input type="checkbox" id="agree1" name="agree1">
+            </fieldset>
+    
+            <input type="submit" value="submit">
+        </form>
+    </div><br><hr><br>
+    
+    <div>
+        
+    </div><br><hr>
+    
+    <div>
+        
+    </div><br><hr>
+    
+</body>
+</body>
+</html>

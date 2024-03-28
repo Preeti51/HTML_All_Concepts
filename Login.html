@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+         Inline Elements and Block Elements in HTML - Explained
+         Inline elements occupy the space as needed within the space 
+         defined by the main element. Unlike block-level elements, 
+         they do not begin on new lines. Some of the inline elements 
+         are <a> , <span> , <img> , <code> , <cite> , <button> , 
+         <input> etc. -->
+
+         <!-- Inline Element: No need of closing tag -->
+
+         <!-- Question: different between type of button and type of submit in TML
+            Submit button is added for a form. When submit is clicked 
+            it triggers to the address written in the "action" attribute 
+            of form element. Button can be used anywhere as a general 
+            purpose. It can be used to redirect to any link and not 
+            restricted to a form action. -->
+
+        <!-- Question: Different between id and name attribute We can 
+            call/for future use take id and name.-->
+        <!-- The name attribute is for submitting a form element to the 
+            server; many elements may share the same name (e.g. radio buttons, 
+            which must have the same name within the set). The id attribute is 
+            for uniquely identifying any element (not just form elements). 
+            It must be unique throughout the entire document. 
+        -->
+
+        <!-- value attribut in input tag when type is submit
+            The value attribute specifies the value of an <input> element. 
+            The value attribute is used differently for different input 
+            types: For "button", "reset", and "submit" - it defines the 
+            text on the button. For "text", "password", and "hidden" - it 
+            defines the initial (default) value of the input field.
+         -->
+    <form>
+        <label for="LoginId">Login ID</label>
+        <input id="LoginId" type="text" placeholder="Enter Email id">
+        <br/>
+        <br/>
+        <label for="pwd">Password</label>
+        <input id="pwd" placeholder="Enter the Password" type="text">
+        <br/>
+        <br/>
+        <input type="submit" value="Submit" >
+
+    </form>
+</body>
+</html>
